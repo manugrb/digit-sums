@@ -1,7 +1,5 @@
-import math
-
 maxLimit = int(input("How many numbers should be calculated with? (In dec)"))
-base = 10
+base = int(input("what base do you want to calculate with?"))
 
 def getDigitSum(number):
 
