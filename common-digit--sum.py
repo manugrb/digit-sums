@@ -1,3 +1,5 @@
+from matplotlib import pyplot as plt
+
 maxLimit = int(input("How many numbers should be calculated with? (In dec)"))
 base = int(input("what base do you want to calculate with?"))
 
@@ -32,3 +34,9 @@ for n in range(maxLimit):
 # print out the results
 for i in range(len(digitSums)):
     print(str(i) + ' -> ' + str(digitSums[i]))
+
+plt.bar(range(len(digitSums)), digitSums)
+plt.title('Digit Sums Distribution')
+plt.xlabel('Digit sums')
+plt.ylabel('Occurences')
+plt.show()
