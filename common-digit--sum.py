@@ -16,4 +16,16 @@ def getDigitSum(number):
         number -= lastDigit
         number = number / 10
 
-    return digitSum
+    return int(digitSum)
+
+digitSums = []
+
+for n in range(maxLimit):
+    digitSum = getDigitSum(n)
+    
+    if(digitSum >= len(digitSums)):
+        digitSums.insert(digitSum, 1)
+    else:
+        digitSums[digitSum] = digitSums[digitSum] + 1
+
+print(digitSums)
