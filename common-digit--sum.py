@@ -28,4 +28,5 @@ for n in range(maxLimit):
     else:
         digitSums[digitSum] = digitSums[digitSum] + 1
 
-print(digitSums)
+for i in range(len(digitSums)):
+    print(str(i) + ' -> ' + str(digitSums[i]))
